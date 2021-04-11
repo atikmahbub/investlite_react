@@ -1,52 +1,7 @@
-.top-bg{
-    background-image: url('../../assets/images/top-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 90vh;
-    position: relative;
-    width: 100%;
-}
+.gc-footer__menu-item a {color: #ffffff}
 
-.bg-girl{
-    position: absolute;
-    left: 0px;
-    margin-left: 20px;
-    overflow: hidden;
-    height: 100%;
-}
-
-.hero-title{
-    width: 100%;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    position: relative;
-    right: 50px
-}
-
-.hero-title div:nth-child(1){
-    font-size: 2.5rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.hero-title div:nth-child(2){
-    font-size: 95px;
-    color: #FEE739;
-    text-transform: uppercase;
-    font-weight: 900;
-    line-height: 6rem;
-}
-
-.hero-title div:nth-child(3){
-    font-size: 2.5rem;
-    color: #FEE739;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1;
+.gc-footer__disclaimer p{
+    margin-top: 10px; 
+    margin-bottom: 0px; 
+    color: #EFEFEF; 
 }
