@@ -5,3 +5,7 @@
     margin-bottom: 0px; 
     color: #EFEFEF; 
 }
+
+.react-tel-input .form-control{
+    width: 100% !important;
+}
