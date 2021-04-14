@@ -2,6 +2,10 @@ import React from "react";
 import PhoneInput from "react-phone-input-2";
 import { useForm } from "react-hook-form";
 import { API, config } from "../../config/API";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 
 const Form = () => {
     const {
@@ -28,6 +32,11 @@ const Form = () => {
                 .catch((err) => {
                     console.log("Error", err);
                 });
+            MySwal.fire({
+                title: "Thank You!",
+                text:
+                    "We are assigning you a broker, please ensure you have your phone to hand to be guided on the final steps.",
+            });
         }
     };
     return (
@@ -162,17 +171,6 @@ const Form = () => {
                                             Phone Number
                                         </div>
                                         <PhoneInput
-                                            onlyCountries={[
-                                                "qa",
-                                                "bh",
-                                                "my",
-                                                "kw",
-                                                "kr",
-                                                "th",
-                                                "om",
-                                                "sa",
-                                                "ae",
-                                            ]}
                                             enableAreaCodeStretch
                                             inputProps={{
                                                 name: "phone",
